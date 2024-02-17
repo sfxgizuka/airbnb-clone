@@ -7,6 +7,7 @@ import Banner from '../components/Banner'
 import HotelListCard from '../components/HotelListCard'
 import PlacesCarouselCard from '../components/PlacesCarouselCard'
 import LargeCard from '../components/LargeCard'
+import Footer from '../components/Footer'
 
 
 
@@ -43,6 +44,7 @@ export default function Home (props:any) {
         <LargeCard img='https://links.papareact.com/4cj'  title='The Greatest Outdoors' description='Whitelists Curated by Airbnb' buttonText='Get Inspired'/>
 
       </main>
+      <Footer />
 
      
     </div>
