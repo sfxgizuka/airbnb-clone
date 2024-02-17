@@ -6,6 +6,7 @@ import Header from '../components/Header'
 import Banner from '../components/Banner'
 import HotelListCard from '../components/HotelListCard'
 import PlacesCarouselCard from '../components/PlacesCarouselCard'
+import LargeCard from '../components/LargeCard'
 
 
 
@@ -32,10 +33,15 @@ export default function Home (props:any) {
         </section>
         <section>
             <h2 className='text-4xl font-semibold py-8'>Live Anywhere</h2>
+            <div className='flex space-x-3 overflow-scroll scrollbar-hide p-3 ml-3'>
             { cardsData?.map((item:any) => (
-                <PlacesCarouselCard key={item?.title} title={item?.title} img={item?.img} />
+                <PlacesCarouselCard key={item?.title} title={item?.title} img={item?.img}/>
             ))}
+            </div>
         </section>
+
+        <LargeCard img='https://links.papareact.com/4cj'  title='The Greatest Outdoors' description='Whitelists Curated by Airbnb' buttonText='Get Inspired'/>
+
       </main>
 
      
